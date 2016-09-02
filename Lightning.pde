@@ -1,17 +1,16 @@
-
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 int startY = 0;
-int startX = 150;
+int startX = 150 + (int)(Math.random() * 100) - 50;
 int endY = 0;
 int endX = 150;
 
 void setup()
 {
-	noLoop();
 	size(300,300);
 	strokeWeight(1);
 	background(0);
-
 
 }
 void draw()
@@ -29,6 +28,11 @@ void draw()
 }
 void mousePressed()
 {
-		redraw();
+	fill(0, 0, 0, 100);
+	rect(0, 0, 300 ,300);
+	startX = 150  + (int)(Math.random() * 100) - 50;
+	startY = 0;
+	endX = 150;
+	endY = 0;
 }
 
