@@ -9,12 +9,12 @@ int endX = 150;
 void setup()
 {
 	size(300,300);
-	strokeWeight(1);
 	background(0);
 
 }
 void draw()
 {
+	strokeWeight((int)(Math.random() * 5));
 	stroke((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255));
 	while(endY < 300)
 
